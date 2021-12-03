@@ -12,14 +12,12 @@ body{
     background-color: #131313
 }
 
-h1, h2{
+h1 {
     font-family: 'Heebo', sans-serif;
-    color: #ddf840
-}
-
-h1{
+    color: #ddf840;
     font-size: 70px;
 }
+    
 
 .container{
     display: flex;
@@ -30,14 +28,20 @@ h1{
     margin-top: 100px;
 }
 
+
 .btn {
     display: block;
-    font-size: 20px;
+    margin-top: 100px;
     padding: 16px 20px;
     border-radius: 20px;
     background-color: #1E58C2;
     color: #ddf840;
     cursor: pointer;
     font-family: inherit;
-    
+    font-size: 50px;
+    width: 300px;
+}
+
+.btn:hover {
+    background-color:#14387c
 }
