@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #131313
+    background-color: #131313;
 }
 
 h1 {
@@ -44,4 +44,69 @@ h1 {
 
 .btn:hover {
     background-color:#14387c
+}
+
+.quiz-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#question{
+    font-size: 5rem;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #ddf840;
+}
+
+.answer{
+    display: flex;
+    font-size: 3rem;
+    margin-top: 10;
+    width: 100%;
+    border: 3px solid #14387c;
+}
+
+.answer:hover{
+    cursor: pointer;
+}
+
+.letter{
+    color: white;
+    background-color:#1E58C2;
+    padding: 10 30;
+}
+
+.option{
+    color: #1E58C2;
+    background-color: rgb(190, 190, 190);
+    padding: 15;
+    width: 100%;
+}
+
+.option:hover{
+    background-color: #808896;
+    cursor: pointer;
+}
+
+.scores{
+    font-size: 2rem;
+}
+
+#correct-text{
+    color: green;
+}
+#score{
+    color:white;
+}
+
+#incorrect{
+    color: white;
+}
+
+#incorrect-text{
+    color: red;
 }
