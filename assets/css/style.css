@@ -18,6 +18,35 @@ h1 {
     font-size: 70px;
 }
     
+#error{
+    font-size: 2rem;
+    color: #ddf840;
+}
+
+.error-messsage{
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+}
+
+#home-button{
+    margin-top: 20px;
+    padding: 5 10;
+    font-size: 2rem;
+    background-color: #1E58C2;
+    color: white;
+}
+
+#home-button:hover{
+    cursor: pointer;
+}
 
 .container{
     display: flex;
