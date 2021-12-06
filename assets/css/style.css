@@ -96,7 +96,7 @@ h1 {
     font-size: 3rem;
     margin-top: 10;
     width: 100%;
-    border: 3px solid #14387c;
+    border: 3px solid #1c4aa1;
 }
 
 .answer:hover{
@@ -110,14 +110,14 @@ h1 {
 }
 
 .option{
-    color: #1E58C2;
-    background-color: rgb(190, 190, 190);
+    color: #2973fc;
+    background-color: rgb(226, 226, 226);
     padding: 15;
     width: 100%;
 }
 
 .option:hover{
-    background-color: #808896;
+    background-color: #b8bbc0;
     cursor: pointer;
 }
 
