@@ -1,4 +1,4 @@
-[{
+let questions = [{
     "id": 1,
     "question": "Question Text",
     "answer": {

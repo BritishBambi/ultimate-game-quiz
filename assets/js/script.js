@@ -1,4 +1,114 @@
 let playButton = document.getElementById("play-btn")
+let question = document.getElementById("question")
+
+let questions = [{
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+
+    {
+
+        question: "Question Text",
+        answer: {
+            1: "Answer1",
+            2: "Answer2",
+            3: "Answer3",
+            4: "Answer4"
+        }
+    },
+]
 
 playButton.addEventListener("click", startGame)
 
@@ -16,3 +126,6 @@ function startGame() {
     quizContent.classList.remove("hidden");
     scores.classList.remove("hidden");
 }
+
+
+
