@@ -31,10 +31,6 @@ h1 {
     flex-direction: column;
 }
 
-.hidden{
-    display: none;
-}
-
 .form-button{
     display: flex;
     justify-content: center;
@@ -52,18 +48,17 @@ h1 {
     cursor: pointer;
 }
 
-.welcome-container{
+#welcome-container{
     display: flex;
     align-content: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
 #play-btn {
-    display: block;
     margin-top: 100px;
     padding: 16px 20px;
     border-radius: 20px;
@@ -79,8 +74,7 @@ h1 {
     background-color:#14387c
 }
 
-.quiz-wrapper{
-    margin-top: 50px;
+#quiz-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,4 +136,8 @@ h1 {
 
 #incorrect-text{
     color: red;
+}
+
+.hidden{
+    display: none;
 }
