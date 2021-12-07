@@ -14,9 +14,15 @@ The colour scheme of the site uses a slightly light black and bright yellow. Thi
 
 ## Bugs
 
+During the early stages of development I had issues with getting my questions to display. They would initially come up as "undefined", so to figure this out I had to do some tinkering. I found that my issue was the code trying to display the question from the html element also called "question". I changed around the names and tried different orders until it would rewrite the HTML element with the "questions" array. 
+
 ## Existing Bugs
 
 ## Deployment
+
+To begin creating my website I used the Code Institute template by navigating [here](https://github.com/Code-Institute-Org/gitpod-full-template) and clicking "Use this Template".
+
+Once this was done I was able to simply create a new repository from the template and add it to my profile. I named my repository and clicked the create repository from the template button.
 
 ## Technologies Used
 
@@ -35,10 +41,6 @@ Gitpod
 Understanding of how to put project into place thanks to Sitepoint:
 
 https://www.sitepoint.com/simple-javascript-quiz/#whatsnext
-
-I learnt about JSON thanks to W3 schools at:
-
-https://www.w3schools.com/js/js_json_intro.asp
 
 ## Acknowledgements
 
