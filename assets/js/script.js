@@ -3,6 +3,9 @@ let question = document.getElementById("question")
 
 let shuffledQuestions, currentQuestionIndex
 
+let availableQuestions = []
+let questionCounter = 0
+
 // Array of questions that will be shuffled through and displayed after a question is answered.
 let questions = [{
 
@@ -132,9 +135,7 @@ function startGame() {
     quizHeading.classList.remove("hidden")
     quizContent.classList.remove("hidden")
     scores.classList.remove("hidden")
-
-    shuffledQuestions = questions.sort(() => Math.random - .5)
-    currentQuestionIndex = 0
+    availableQuestions = [...questions]
 
     nextQuestion();
 }
@@ -143,13 +144,10 @@ function startGame() {
  * Displays the next question via the shuffled array of questions
  */
 function nextQuestion(){
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    questionCounter++
+    let currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[currentQuestionIndex]
+    question.innerText = currentQuestion.question
 }
 
-/**
- * Writes the question text to be replaced with the question from the array
- */
-function showQuestion(questions){
-    question.innerText = questions.question
-}
 
