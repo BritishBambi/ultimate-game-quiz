@@ -37,6 +37,7 @@ The user is automatically brought to the 404 error page whenever they go to a pa
 
 During the early stages of development I had issues with getting my questions to display. They would initially come up as "undefined", so to figure this out I had to do some tinkering. I found that my issue was the code trying to display the question from the html element also called "question". I changed around the names and tried different orders until it would rewrite the HTML element with the "questions" array. 
 
+While devloping gitpod ran into issues displaying a preview of the site on a local network. To get around this I had to restart the workspace multiple times so that it would function correctly. I then also seeked out a new extension that would improve my preview experience. By downloading Live Server, any changes I made would refresh live to me on my other monitor. This made the flow of design and experimenting much easier.
 ## Existing Bugs
 
 ## Deployment
@@ -56,6 +57,8 @@ Javascript
 Google Fonts
 
 Gitpod
+
+Live Server (Gitpod extension)
 
 Github
 

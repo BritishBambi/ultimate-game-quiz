@@ -139,7 +139,7 @@ function startGame() {
     scores.classList.remove("hidden")
     availableQuestions = [...questions]
 
-    nextQuestion()
+    nextQuestion();
 
 }
 
@@ -160,7 +160,7 @@ function nextQuestion() {
 
     availableQuestions.splice(currentQuestionIndex, 1);
 
-    acceptingAnswers = true
+    acceptingAnswers = true;
 }
 choices.forEach(option =>  {
     option.addEventListener('click', e =>{
