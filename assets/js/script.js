@@ -6,9 +6,12 @@ let choices = Array.from(document.getElementsByClassName("option-text"))
 
 let shuffledQuestions, currentQuestionIndex
 
+let acceptingAnswers = false
 let availableQuestions = []
 let questionCounter = 0
 let currentQuestion = {}
+
+const maxQuestions = 10
 
 
 // Array of questions that will be shuffled through and displayed after a question is answered.
@@ -119,6 +122,7 @@ playButton.addEventListener("click", startGame)
  */
 function startGame() {
 
+    let homeButton = document.getElementById("home-btn")
     let Welcome = document.getElementById("welcome")
     let description = document.getElementById("description")
     let quizHeading = document.getElementById("quiz-heading")
@@ -129,12 +133,13 @@ function startGame() {
     playButton.classList.add("hidden")
     Welcome.classList.add("hidden")
     description.classList.add("hidden")
+    homeButton.classList.remove("hidden")
     quizHeading.classList.remove("hidden")
     quizContent.classList.remove("hidden")
     scores.classList.remove("hidden")
     availableQuestions = [...questions]
 
-    nextQuestion();
+    nextQuestion()
 
 }
 
@@ -142,6 +147,7 @@ function startGame() {
  * Displays the next question via the shuffled array of questions
  */
 function nextQuestion() {
+    
     questionCounter++;
     let currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[currentQuestionIndex];
@@ -149,6 +155,21 @@ function nextQuestion() {
 
     choices.forEach(option => {
         const number = option.dataset['number'];
-        option.innerText = currentQuestion['option' + number]
+        option.innerText = currentQuestion['option' + number];
     })
+
+    availableQuestions.splice(currentQuestionIndex, 1);
+
+    acceptingAnswers = true
 }
+choices.forEach(option =>  {
+    option.addEventListener('click', e =>{
+        if(!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+        console.log(selectedAnswer);
+        nextQuestion();
+    })
+})

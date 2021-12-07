@@ -25,6 +25,12 @@ From the quiz screen, a simple home button has been made available in the top le
 
 ![Screenshot showing home button](screenshots/homebtn-screenshot.PNG "Screenshot of Website Home Button")
 
+### 404 Page
+
+The user is automatically brought to the 404 error page whenever they go to a page that does not exist. This is usually by mistyping something into the address bar or by following an incorrect link. In the case that a user makes the mistake of mistyping the page in the bar, I have created my own 404 page which follows the styling of the rest of the site. As well as this it also features a simple message to explain to users what has happened. Then they can use the provided button which will bring them back to the home page. This ensures they stay within the realms of the site and don't get lost or frustrated.
+
+![Screenshot showing 404 page](screenshots/404-screenshot.PNG "Screenshot of 404 Page")
+
 ## Future plans
 
 ## Bugs
