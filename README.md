@@ -15,6 +15,16 @@ Wireframes of my proposed project designs can be seen bellow:
 
 ## Existing Features
 
+### Welcome Screen
+
+When the site is initially loaded the user is greeted with a simple heading and site description. This way the user isn't overblown with the quiz when they first enter the site. It also features a play button, which gives the user total control for when the quiz is loaded. The play button is fully interactive as well and highlights with a mouse pointer so the user can easily make out that it is a button. By using the blue background it also stands out immedietly when the page is loaded. 
+
+### Home button
+
+From the quiz screen, a simple home button has been made available in the top left of the screen. Rather than use a full navbar for site navigation a simple home button takes the user in between the pages of the website with ease. It uses the blue and yellow font style similar to the play button so that it can easily be located as soon as the page is loaded. This way the user isn't looking around or defaults to the back button as they have the button made obvious within seconds.
+
+![Screenshot showing home button](screenshots/homebtn-screenshot.PNG "Screenshot of Website Home Button")
+
 ## Future plans
 
 ## Bugs

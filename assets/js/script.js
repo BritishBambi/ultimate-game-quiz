@@ -3,13 +3,13 @@
 let playButton = document.getElementById("play-btn")
 let question = document.getElementById("question")
 let choices = Array.from(document.getElementsByClassName("option-text"))
-console.log(choices)
 
 let shuffledQuestions, currentQuestionIndex
 
 let availableQuestions = []
 let questionCounter = 0
 let currentQuestion = {}
+
 
 // Array of questions that will be shuffled through and displayed after a question is answered.
 let questions = [{
@@ -104,7 +104,7 @@ let questions = [{
 
         question: "What is the highest-selling gaming console to date?",
         option1: "Nintendo Switch",
-        option2: "Playstation 2 -",
+        option2: "Playstation 2",
         option3: "Xbox 360",
         option4: "Nintendo Wii",
         answer: 2
@@ -120,6 +120,7 @@ playButton.addEventListener("click", startGame)
 function startGame() {
 
     let Welcome = document.getElementById("welcome")
+    let description = document.getElementById("description")
     let quizHeading = document.getElementById("quiz-heading")
     let quizContent = document.getElementById("question-area")
     let scores = document.getElementById("score-area")
@@ -127,6 +128,7 @@ function startGame() {
     console.log("Game Started")
     playButton.classList.add("hidden")
     Welcome.classList.add("hidden")
+    description.classList.add("hidden")
     quizHeading.classList.remove("hidden")
     quizContent.classList.remove("hidden")
     scores.classList.remove("hidden")
