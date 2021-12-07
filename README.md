@@ -6,6 +6,11 @@ My site is created with the intention of delivering an entertaining source of me
 
 The colour scheme of the site uses a slightly light black and bright yellow. This ensures that all the text and content of the site stands out and can easily be read. The bright yellow is based on old arcade style colour schemes, almost throwing back to games like Pacman. This is intentionally designed this way to play into the video game aspect of the quiz while maintaining a positive contrast score. Some other elements such as the play button and the actual quiz options use a bright blue and white/yellow scheme. The blue also plays into the arcadey feel of the site and again ensures that all the content can be read by all users.
 
+Wireframes of my proposed project designs can be seen bellow:
+
+![Screenshot showing the orignal home screen design](screenshots/home-wireframe.PNG "Screenshot of Home Screen Wireframe")
+![Screenshot showing the orignal quiz screen design](screenshots/quiz-wireframe.PNG "Screenshot of Quiz wireframe")
+
 ![Screenshot showing website contract score](screenshots/site-contrast.PNG "Screenshot of Wave Evaluation Tool")
 
 ## Existing Features
@@ -36,12 +41,20 @@ Google Fonts
 
 Gitpod
 
+Github
+
 ## Credits
 
 Understanding of how to put project into place thanks to Sitepoint:
 
 https://www.sitepoint.com/simple-javascript-quiz/#whatsnext
 
+Quiz questions were taken from:
+
+https://icebreakerideas.com/video-game-trivia/
+
 ## Acknowledgements
 
 A lot of the structure and understanding was thanks to the Love Maths project
+
+Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.

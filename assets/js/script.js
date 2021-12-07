@@ -1,3 +1,5 @@
+// The code for this quiz was inspired by https://www.youtube.com/watch?v=riDzcEQbX6k&t however I personalised it and only took the functionality of it into my own quiiz.
+
 let playButton = document.getElementById("play-btn")
 let question = document.getElementById("question")
 let choices = Array.from(document.getElementsByClassName("option-text"))

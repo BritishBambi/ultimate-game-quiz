@@ -85,7 +85,6 @@ h1 {
     font-size: 5rem;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
     color: #ddf840;
 }
 
@@ -141,3 +140,51 @@ h1 {
 .hidden{
     display: none;
 }
+
+@media screen and (min-width: 320px) {
+    h1{
+        font-size: 20px;
+    }
+    #quiz-heading{
+        font-size: 30px;
+    }
+    #question{
+        font-size: 2rem;
+    }
+
+    .letter{
+        font-size: 2rem;
+        padding: 5 30;
+    }
+    .answer{
+        font-size: 2rem;
+    }
+    .scores{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    h1{
+        font-size: 60px;
+    }
+    #quiz-heading{
+        font-size: 60px;
+    }
+    #question{
+        font-size: 3rem;
+    }
+
+    .letter{
+        font-size: 3rem;
+        padding: 5 30;
+    }
+    .answer{
+        font-size: 3rem;
+    }
+    .scores{
+        font-size: 2rem;
+    }
+}
+
+
