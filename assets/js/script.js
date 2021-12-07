@@ -1,118 +1,111 @@
 let playButton = document.getElementById("play-btn")
 let question = document.getElementById("question")
+let choices = Array.from(document.getElementsByClassName("option-text"))
+console.log(choices)
 
 let shuffledQuestions, currentQuestionIndex
 
 let availableQuestions = []
 let questionCounter = 0
+let currentQuestion = {}
 
 // Array of questions that will be shuffled through and displayed after a question is answered.
 let questions = [{
-
         question: "In what year was Nintendo founded?",
-        answer: {
-            1: "1889 -",
-            2: "1989",
-            3: "1934",
-            4: "1962"
-        }
+        option1: "1889",
+        option2: "1989",
+        option3: "1934",
+        option4: "1963",
+        answer: 1
     },
 
     {
         question: "What is the best selling videogame of all time?",
-        answer: {
-            1: "Tetris",
-            2: "Call of Duty",
-            3: "Minecraft -",
-            4: "Fortnite"
-        }
+        option1: "Tetris",
+        option2: "Call of Duty",
+        option3: "Minecraft",
+        option4: "Fortnite",
+        answer: 3
+
     },
 
     {
         question: "What is the most expensive video game made to date?",
-        answer: {
-            1: "God of War",
-            2: "GTA V -",
-            3: "Call of Duty: Modern Warfare",
-            4: "Skyrim"
-        }
+        option1: "God of War",
+        option2: "GTA V",
+        option3: "Call of Duty: Modern Warfare",
+        option4: "Skyrim",
+        answer: 2
     },
 
     {
-
         question: "How much did a virtual reality device cost in 1980?",
-        answer: {
-            1: "$49,000 -",
-            2: "$17,000",
-            3: "$62,000",
-            4: "$32,000"
-        }
+        option1: "$49,000",
+        option2: "$17,000",
+        option3: "$62,000",
+        option4: "$32,000",
+        answer: 1
+
     },
 
     {
 
         question: "What position did the creator of the Game Boy have at Nintendo?",
-        answer: {
-            1: "CFO",
-            2: "Intern",
-            3: "Video Game Designer",
-            4: "Janitor-"
-        }
+        option1: "CFO",
+        option2: "Intern",
+        option3: "Video Game Designer",
+        option4: "Janitor",
+        answer: 4
     },
 
     {
 
         question: "Mario first appeared in what video game?",
-        answer: {
-            1: "Mario Kart",
-            2: "Super Mario Brothers",
-            3: "Donkey Kong -",
-            4: "Super Mario Baseball"
-        }
+        option1: "Mario Kart",
+        option2: "Super Mario Brothers",
+        option3: "Donkey Kong",
+        option4: "Super Mario Baseball",
+        answer: 3
     },
 
     {
 
         question: "What was the first video game to be played in outer space?",
-        answer: {
-            1: "StarCraft -",
-            2: "Pong",
-            3: "World of Warcraft",
-            4: "Tetris"
-        }
+        option1: "StarCraft ",
+        option2: "Pong",
+        option3: "World of Warcraft",
+        option4: "Tetris",
+        answer: 1
     },
 
     {
 
         question: "What world market generates the most revenue in the video game industry?",
-        answer: {
-            1: "England",
-            2: "China -",
-            3: "Japan",
-            4: "United States"
-        }
+        option1: "England",
+        option2: "China",
+        option3: "Japan",
+        option4: "United States",
+        answer: 2
     },
 
     {
 
         question: "What is the highest-grossing movie based on a video game?",
-        answer: {
-            1: "Doom",
-            2: "Resident Evil: Afterlife",
-            3: "Tomb Raider",
-            4: "Detective Pikachu -"
-        }
+        option1: "Doom",
+        option2: "Resident Evil: Afterlife",
+        option3: "Tomb Raider",
+        option4: "Detective Pikachu",
+        answer: 4
     },
 
     {
 
         question: "What is the highest-selling gaming console to date?",
-        answer: {
-            1: "Nintendo Switch",
-            2: "Playstation 2 -",
-            3: "Xbox 360",
-            4: "Nintendo Wii"
-        }
+        option1: "Nintendo Switch",
+        option2: "Playstation 2 -",
+        option3: "Xbox 360",
+        option4: "Nintendo Wii",
+        answer: 2
     },
 ]
 
@@ -138,16 +131,20 @@ function startGame() {
     availableQuestions = [...questions]
 
     nextQuestion();
+
 }
 
 /**
  * Displays the next question via the shuffled array of questions
  */
-function nextQuestion(){
-    questionCounter++
-    let currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[currentQuestionIndex]
-    question.innerText = currentQuestion.question
+function nextQuestion() {
+    questionCounter++;
+    let currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[currentQuestionIndex];
+    question.innerText = currentQuestion.question;
+
+    choices.forEach(option => {
+        const number = option.dataset['number'];
+        option.innerText = currentQuestion['option' + number]
+    })
 }
-
-

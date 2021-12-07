@@ -107,14 +107,14 @@ h1 {
     padding: 10 30;
 }
 
-.option{
+.option-text{
     color: #2973fc;
     background-color: rgb(226, 226, 226);
     padding: 15;
     width: 100%;
 }
 
-.option:hover{
+.option-text:hover{
     background-color: #b8bbc0;
     cursor: pointer;
 }
