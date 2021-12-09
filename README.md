@@ -90,6 +90,14 @@ Was able to store an array to local storage learning through stackoverflow:
 
 https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
 
+Grew my understanding of sorting arrays via Javascript module and this W3 lesson:
+
+https://www.w3schools.com/js/js_array_sort.asp
+
+Used arrow functions after reading up here:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
 A lot of the structure and understanding was thanks to the Love Maths project
 
 Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.
