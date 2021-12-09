@@ -82,6 +82,10 @@ Ability to add a timeout learned at w3 schools:
 
 https://www.w3schools.com/jsref/met_win_settimeout.asp
 
+Session storage applied to script using this as guidance:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
 A lot of the structure and understanding was thanks to the Love Maths project
 
 Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.
