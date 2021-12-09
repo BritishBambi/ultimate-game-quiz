@@ -135,11 +135,13 @@ function startGame() {
     let quizHeading = document.getElementById("quiz-heading");
     let quizContent = document.getElementById("question-area");
     let scores = document.getElementById("score-area");
+    let highScore = document.getElementById("highscores")
 
     console.log("Game Started");
     playButton.classList.add("hidden");
     Welcome.classList.add("hidden");
     description.classList.add("hidden");
+    highScore.classList.add("hidden")
     homeButton.classList.remove("hidden");
     quizHeading.classList.remove("hidden");
     quizContent.classList.remove("hidden");
