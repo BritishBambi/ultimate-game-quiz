@@ -3,21 +3,22 @@
 let playButton = document.getElementById("play-btn");
 let question = document.getElementById("question");
 let choices = Array.from(document.getElementsByClassName("option-text"));
+
 let score = 0;
 let scoreNumber = document.getElementById("score");
-let incorrect = 0
-let incorrectNumber = document.getElementById("incorrect")
+let incorrect = 0;
+let incorrectNumber = document.getElementById("incorrect");
 
 let shuffledQuestions, currentQuestionIndex;
 
 let acceptingAnswers = false;
 let availableQuestions = [];
 let questionCounter = 0;
+let questionCounterText = document.getElementById("counter-text");
 let currentQuestion = {};
 
 
 const maxQuestions = 10;
-const scoreAdditon = 1
 
 
 // Array of questions that will be shuffled through and displayed after a question is answered.
@@ -155,6 +156,8 @@ function startGame() {
 function nextQuestion() {
 
     questionCounter++;
+    questionCounterText.innerText = `${questionCounter}/${maxQuestions}`;
+
     let currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[currentQuestionIndex];
     question.innerText = currentQuestion.question;
