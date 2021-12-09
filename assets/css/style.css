@@ -214,6 +214,10 @@ a{
     background-color: #14387c;
 }
 
+.generic-btn[disabled]:hover{
+    cursor: not-allowed;
+}
+
 form{
     width: 100%;
     display: flex;

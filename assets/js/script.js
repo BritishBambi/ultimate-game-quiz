@@ -154,7 +154,9 @@ function startGame() {
  * Displays the next question via the shuffled array of questions
  */
 function nextQuestion() {
-
+    if (availableQuestions === 0 || questionCounter >= maxQuestions){
+        return window.location.assign("/end.html");
+    }
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${maxQuestions}`;
 
