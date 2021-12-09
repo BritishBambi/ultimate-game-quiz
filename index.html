@@ -10,20 +10,22 @@
 
 <body>
     <main>
+        <header>
         <form action="index.html">
             <button id="home-btn" class="hidden">Go Home!</button>
         </form>
         <div id="welcome-container">
             <h1 id="welcome">Welcome to the Ultimate Gaming Quiz</h1>
-            <h2 id="description">Can you prove your gamer knowledge? Try and ace all 10 of these gaming related questions to put your brain to the test!</h2>
+            <h2 id="description">Can you prove your gamer knowledge? Try and ace all 10 of these gaming related
+                questions to put your brain to the test!</h2>
             <button id="play-btn">Play!</button>
         </div>
+    </header>
         <section id="quiz-wrapper">
-            <h1 id="quiz-heading" class= "hidden">
+            <h1 id="quiz-heading" class="hidden">
                 Ultimate Gaming Quiz
             </h1>
-
-            <section>
+            <div>
                 <div id="question-area" class="hidden">
                     <div id="counter">
                         <p id="counter-text"></p>
@@ -46,11 +48,11 @@
                         <p class="option-text" data-number="4">Choice 4</p>
                     </div>
                 </div>
-            </section>
-            <section id="score-area" class= "hidden">
+            </div>
+            <div id="score-area" class="hidden">
                 <p class="scores" id="correct-text">Correct Answers: <span id="score">0</span></p>
                 <p class="scores" id="incorrect-text">Incorrect Answers: <span id="incorrect">0</span></p>
-            </section>
+            </div>
             </div>
         </section>
     </main>
