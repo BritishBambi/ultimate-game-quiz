@@ -86,6 +86,10 @@ Session storage applied to script using this as guidance:
 
 https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
 
+Was able to store an array to local storage learning through stackoverflow:
+
+https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
+
 A lot of the structure and understanding was thanks to the Love Maths project
 
 Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.

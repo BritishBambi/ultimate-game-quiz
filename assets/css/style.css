@@ -232,6 +232,10 @@ input{
     font-size: 20px;
 }
 
+#final-score{
+    font-size: 5rem;
+}
+
 @media screen and (min-width: 320px) {
     h1,h2{
         font-size: 20px;
