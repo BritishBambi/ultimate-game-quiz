@@ -78,6 +78,10 @@ Refeshed knowledge of all symbols and how to apply to project found on this stac
 
 https://stackoverflow.com/questions/9549780/what-does-this-symbol-mean-in-javascript
 
+Ability to add a timeout learned at w3 schools:
+
+https://www.w3schools.com/jsref/met_win_settimeout.asp
+
 A lot of the structure and understanding was thanks to the Love Maths project
 
 Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.
