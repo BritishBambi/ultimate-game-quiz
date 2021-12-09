@@ -3,6 +3,10 @@
 let playButton = document.getElementById("play-btn");
 let question = document.getElementById("question");
 let choices = Array.from(document.getElementsByClassName("option-text"));
+let score = 0;
+let scoreNumber = document.getElementById("score");
+let incorrect = 0
+let incorrectNumber = document.getElementById("incorrect")
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -11,7 +15,9 @@ let availableQuestions = [];
 let questionCounter = 0;
 let currentQuestion = {};
 
+
 const maxQuestions = 10;
+const scoreAdditon = 1
 
 
 // Array of questions that will be shuffled through and displayed after a question is answered.
@@ -172,6 +178,14 @@ choices.forEach(option => {
 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
+        if (classToApply === "correct") {
+            score++;
+            scoreNumber.innerText = score;
+        } else if (classToApply === "incorrect"){
+            incorrect++;
+            incorrectNumber.innerText = incorrect;
+        }
+
         selectedChoice.classList.add(classToApply);
 
         setTimeout(() => {
@@ -179,5 +193,6 @@ choices.forEach(option => {
             nextQuestion();
         }, 1000);
 
+        console.log(score);
     })
 })
