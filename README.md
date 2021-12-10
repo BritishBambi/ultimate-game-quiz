@@ -88,6 +88,8 @@ Extending the quiz out to more questions and adding the ability to earn more sco
 
 ## Testing
 
+
+
 Index/Home Validation:
 
 ![Screenshot showing index validation test](screenshots/index-validation.PNG "Index Validator")
@@ -108,6 +110,9 @@ JS Validation:
 
 Using JSHint I was able to ensure that there was no warnings with any of my js files. I adjusted my files based on the feedback it gave me, which was primarly adding semi-colons.
 
+Chrome Dev Tools
+During development, I relied heavily on dev tools to make live adjustments to the site. This allowed me to make small changes without affecting my code and needing to reverse engineer any mistakes. Using dev tools I was also able to view my site across several different resolutions and screen sizes. This helped me identify where my site may need to be changed to work correctly.
+
 ## Bugs
 
 During the early stages of development I had issues with getting my questions to display. They would initially come up as "undefined", so to figure this out I had to do some tinkering. I found that my issue was the code trying to display the question from the html element also called "question". I changed around the names and tried different orders until it would rewrite the HTML element with the "questions" array. 
@@ -115,6 +120,8 @@ During the early stages of development I had issues with getting my questions to
 While devloping gitpod ran into issues displaying a preview of the site on a local network. To get around this I had to restart the workspace multiple times so that it would function correctly. I then also seeked out a new extension that would improve my preview experience. By downloading Live Server, any changes I made would refresh live to me on my other monitor. This made the flow of design and experimenting much easier.
 
 Towards the final stages while creating the high score list I encountered some blue screen errors on my PC. To combat this unexpected issue I began to save and commit my efforts more often. Fortunatly there were no more crashes during development and I was able to complete the rest of the script without any further crashes.
+
+At the end of development I had issues with the links working on the deployed version of the site. To fix this I had to go to my script files and remove the forward slashes before my page links. This would work on a local port but required them to be removed for the live version.
 
 ## Existing Bugs
 

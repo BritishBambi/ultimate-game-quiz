@@ -174,6 +174,9 @@ function nextQuestion() {
 
     acceptingAnswers = true;
 }
+
+// When an option is clicked the function will check to see if the answer is correct or incorrect and apply the correct class to indicate to the user if it was right.
+// Then the correct counter is added to and a new question is loaded. When the new question is loaded the previous one is removed from the index.
 choices.forEach(option => {
     option.addEventListener('click', e => {
         if (!acceptingAnswers) return;
