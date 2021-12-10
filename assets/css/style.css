@@ -256,13 +256,45 @@ input{
 
 @media screen and (min-width: 320px) {
     h1,h2{
-        font-size: 20px;
+        font-size: 1.2rem;
+    }
+
+    #description{
+        font-size: 1.5rem;
+    }
+    #quiz-heading{
+        font-size: 1.5rem;
+    }
+    #question{
+        font-size: 1.3rem;
+    }
+
+    .letter{
+        font-size: 1.5rem;
+        padding: 5 10;
+    }
+    .answer{
+        font-size: 1.5rem;
+    }
+    .scores{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media  screen and (min-width: 700px) {
+    h1,h2{
+        font-size: 2.6rem;
+    }
+
+    #description{
+        font-size: 2rem;
     }
     #quiz-heading{
         font-size: 30px;
     }
     #question{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .letter{
@@ -275,18 +307,17 @@ input{
     .scores{
         font-size: 1.5rem;
     }
-
 }
 
 @media screen and (min-width: 1080px) {
     h1{
-        font-size: 60px;
+        font-size: 3rem;
     }
     #quiz-heading{
         font-size: 60px;
     }
     #question{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .letter{
