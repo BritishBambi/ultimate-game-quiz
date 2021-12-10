@@ -17,7 +17,9 @@ Wireframes of my proposed project designs can be seen bellow:
 
 ### Welcome Screen
 
-When the site is initially loaded the user is greeted with a simple heading and site description. This way the user isn't overblown with the quiz when they first enter the site. It also features a play button, which gives the user total control for when the quiz is loaded. The play button is fully interactive as well and highlights with a mouse pointer so the user can easily make out that it is a button. By using the blue background it also stands out immedietly when the page is loaded. 
+When the site is initially loaded the user is greeted with a simple heading and site description. This way the user isn't overblown with the quiz when they first enter the site. It also features a play button, which gives the user total control for when the quiz is loaded. There is also a high score button, when which pressed will take the user to the score screen, negating the need to complete the quiz first. The play and highscore buttons are fully interactive as well and highlights with a mouse pointer so the user can easily make out that it is a button. By using the blue background they also stand out immedietly when the page is loaded. 
+
+![Screenshot showing home screen](screenshots/home-screenshot.PNG "Screenshot of Website Home")
 
 ### Home button
 
@@ -25,13 +27,39 @@ From the quiz screen, a simple home button has been made available in the top le
 
 ![Screenshot showing home button](screenshots/homebtn-screenshot.PNG "Screenshot of Website Home Button")
 
+### High Score Screen
+
+The site also features the ability to locally store high scores and display them using an array in a list. If the user wants to see their own highscore compared to other local ones they can be accessed using the High Score button on the home page. The high score screen will display the top 5 highest scores on the local storage. If a new score is saved that is higher than the lowest then the bottom score will be spliced out and the new score entered.
+
+![Screenshot showing the high score screen](screenshots/highscore-screenshot.PNG "screenshot of Highscore screen")
+
 ### 404 Page
 
 The user is automatically brought to the 404 error page whenever they go to a page that does not exist. This is usually by mistyping something into the address bar or by following an incorrect link. In the case that a user makes the mistake of mistyping the page in the bar, I have created my own 404 page which follows the styling of the rest of the site. As well as this it also features a simple message to explain to users what has happened. Then they can use the provided button which will bring them back to the home page. This ensures they stay within the realms of the site and don't get lost or frustrated.
 
 ![Screenshot showing 404 page](screenshots/404-screenshot.PNG "Screenshot of 404 Page")
 
+### Question Counter
+
+While the user is progressing through the quiz, a counter will display the current question and how many in total there are. This is a simple but effective feature which means the user does not lose their place in the quiz. It also gives them a clear indicator for how many questions they have left. This way they do not find themselves lost or wondering how long they have to play the game for.
+
+![Screenshot showing question counter](screenshots/question-counter-screenshot.PNG "Screenshot of Question Counter")
+
+### Quiz 
+
+The main quiz of the site features a very large UI and functional colour scheme. The question is displayed at the top in a Span ensuring that it stands out more than the other text on the screen. The choices for answers are displayed in front of a white background with blue text. This makes it very easy for the user to read the content and make their selection. The letter for each choice is also in the container to the left of the choice. Using the oposite colour scheme to the option text I make the entire boundry of the option stick out. When the user hovers over an answer their cursor will change to a pointer to clearly indicate interaction aswell. When the user gets an answer right or wrong the answer will light up green or red to provide immediate feedback to the user.
+
+![Screenshot showing quiz](screenshots/quiz-screenshot.PNG "Screenshot of Quiz")
+
+### Score Indicator
+
+At the bottom of the quiz a live counter will show the user how many questions they have got right or wrong. The green/red text before the counter also provides some feedback to the good/bad result. This way the user will always have an idea of how well they are performing throughout the quiz. The value of their final score will also be saved for highscores so knowing what it is throughout lets them know if it is high score worthy.
+
+![Screenshot showing score counter](screenshots/scores-screenshot.PNG "Screenshot of Quiz Scores")
+
 ## Future plans
+
+## Testing
 
 ## Bugs
 
