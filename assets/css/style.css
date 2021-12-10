@@ -1,5 +1,7 @@
+/* Loads the google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Source+Sans+Pro&display=swap');
 
+/* General styling  */
 * {
     border: none;
     margin: 0;
@@ -21,6 +23,8 @@ h1,h2 {
 a{
     text-decoration: none;
 }
+
+/* 404 Page Styling */
     
 #error{
     font-size: 2rem;
@@ -52,6 +56,8 @@ a{
     cursor: pointer;
 }
 
+/* Welcome Screen */
+
 #welcome-container{
     display: flex;
     align-content: center;
@@ -68,6 +74,7 @@ a{
     width: 50%;
 }
 
+/* Button Styling */
 
 #play-btn {
     margin-top: 100px;
@@ -94,6 +101,30 @@ a{
 #play-btn:hover {
     background-color:#14387c
 }
+
+.generic-btn{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #1E58C2;
+    color: #ddf840;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+.generic-btn:hover{
+    cursor: pointer;
+    background-color: #14387c;
+}
+
+.generic-btn[disabled]:hover{
+    cursor: not-allowed;
+}
+
+/* Quiz Styling */
 
 #quiz-wrapper{
     display: flex;
@@ -139,6 +170,8 @@ a{
     cursor: pointer;
 }
 
+/* Score Counters */
+
 .scores{
     font-size: 2rem;
 }
@@ -158,10 +191,6 @@ a{
     color: red;
 }
 
-.hidden{
-    display: none;
-}
-
 .correct{
     background-color: green;
     color: white;
@@ -172,12 +201,21 @@ a{
     color: white;
 }
 
+/* Hidden Class */
+.hidden{
+    display: none;
+}
+
+/* Question Counter */
+
 #counter-text{
     display: flex;
     justify-content: center;
     color: #ddf840;
     font-size: 3rem;
 }
+
+/* Score Screen */
 
 .score-container{
     display: flex;
@@ -188,35 +226,6 @@ a{
     max-width: 80rem;
     height: 100vh;
     margin: 0px auto;
-}
-
-.flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.generic-btn{
-    margin-top: 20px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: #1E58C2;
-    color: #ddf840;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 30px;
-    width: 200px;
-    text-align: center;
-}
-
-.generic-btn:hover{
-    cursor: pointer;
-    background-color: #14387c;
-}
-
-.generic-btn[disabled]:hover{
-    cursor: not-allowed;
 }
 
 form{
@@ -237,6 +246,8 @@ input{
     font-size: 5rem;
 }
 
+/* High score screen */
+
 .highScore-container{
     margin-top: 100px;
     display: flex;
@@ -254,6 +265,17 @@ input{
     justify-content: center;
     font-size: 2.2rem;
 }
+
+/* Generic flex class */
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive Styling */
 
 @media screen and (min-width: 320px) {
     h1,h2{

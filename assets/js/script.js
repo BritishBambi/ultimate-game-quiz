@@ -144,8 +144,10 @@ function startGame() {
     quizHeading.classList.remove("hidden");
     quizContent.classList.remove("hidden");
     scores.classList.remove("hidden");
+    // Array of questions
     availableQuestions = [...questions];
 
+    // Loads the next question
     nextQuestion();
 
 }
@@ -154,24 +156,29 @@ function startGame() {
  * Displays the next question via the shuffled array of questions. If no questions are remaining then it will bring the user to the end screen.
  */
 function nextQuestion() {
-    if (availableQuestions === 0 || questionCounter >= maxQuestions){
+    if (availableQuestions === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("finalScore", score);
         return window.location.assign("end.html");
     }
+    // Question counter is increased by one and is represented by showing the current question number next to the max questions
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${maxQuestions}`;
 
+    // Writes the current question based on a random selection out of the remaining available question
     let currentQuestionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[currentQuestionIndex];
     question.innerText = currentQuestion.question;
 
+    // Writes all the question choices based on the current question and all available options from the arrray
     choices.forEach(option => {
         const number = option.dataset.number;
         option.innerText = currentQuestion['option' + number];
     });
 
+    // Removes the current question from the array so it cannot be pulled from the random selection again.
     availableQuestions.splice(currentQuestionIndex, 1);
 
+    //Ensures that accepting answers it true so the game does not end early by accident.
     acceptingAnswers = true;
 }
 
@@ -181,27 +188,32 @@ choices.forEach(option => {
     option.addEventListener('click', e => {
         if (!acceptingAnswers) return;
 
+        // Saves the selected choice as the target and also saved the number represnting the choice in the array
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset.number;
 
+        // Applies a class to the answer field depending if the answer number from the array is the same as the selected answer.
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
+        // If the answer is correct then the score will add by 1 and will write the current score to the score counter.
         if (classToApply === "correct") {
             score++;
             scoreNumber.innerText = score;
-        } else if (classToApply === "incorrect"){
+            // If the answer is incorrect then the incorrect value will add by 1 and will write the amount of incorrect answers to the counter.
+        } else if (classToApply === "incorrect") {
             incorrect++;
             incorrectNumber.innerText = incorrect;
         }
 
+        // Applies the aplicable class
         selectedChoice.classList.add(classToApply);
 
+        // Creates a timeout period for the user to see their answer and then removes the class before the next question is loaded.
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             nextQuestion();
         }, 1000);
 
-        console.log(score);
     });
 });
