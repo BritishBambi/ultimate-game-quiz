@@ -2,16 +2,37 @@
 
 My site is created with the intention of delivering an entertaining source of media to users. I have done this by creating an interactive quiz about video games that will challenge users. I designed the site with an old school arcade scheme in mind, this plays on the nostalgia that users would have around video games. Any user that goes on the site will be able to easily interact with all the sites functions. IF CAN BE DONE Users will also be able to store a personal highscore to encourage sharing with friends and attempting to beat each other. This will in turn create a social aspect around the quiz.
 
+[Link to Deployed site](https://britishbambi.github.io/ultimate-game-quiz/index.html)
+
 ## UX
 
+I have elected for a simple font style on the site. The main headings are using Heebo and the body is using Source Sans Pro. I experimented early on with some more "gaming" styled fonts which were pixilated in nature. However I find that the user prefers the ability to read everything clearly, so I went for a more traditional font. Heebo has a slightly larger weight than the body so that the text subtly stands out more against the rest of the page. The fonts I have used provide an easy user experience and stand out well against the colour scheme I have used.
+
 The colour scheme of the site uses a slightly light black and bright yellow. This ensures that all the text and content of the site stands out and can easily be read. The bright yellow is based on old arcade style colour schemes, almost throwing back to games like Pacman. This is intentionally designed this way to play into the video game aspect of the quiz while maintaining a positive contrast score. Some other elements such as the play button and the actual quiz options use a bright blue and white/yellow scheme. The blue also plays into the arcadey feel of the site and again ensures that all the content can be read by all users.
+
+![Screenshot showing website contract score](screenshots/site-contrast.PNG "Screenshot of Wave Evaluation Tool")
 
 Wireframes of my proposed project designs can be seen bellow:
 
 ![Screenshot showing the orignal home screen design](screenshots/home-wireframe.PNG "Screenshot of Home Screen Wireframe")
 ![Screenshot showing the orignal quiz screen design](screenshots/quiz-wireframe.PNG "Screenshot of Quiz wireframe")
 
-![Screenshot showing website contract score](screenshots/site-contrast.PNG "Screenshot of Wave Evaluation Tool")
+As you can see I stuck pretty closely to the orignal design of my wireframes. However I initally intended on the highscores button using JS to make them appear on screen. Instead I elected to create a new screen entirely which would use local storage to carry over the saved highscore list and display it to the user. This proved to be a very functional choice and did not create any more extra clicks for the user to make.
+
+User Stories as followed:
+
+### New Users
+
+* I am wanting to engage in a gaming quiz.
+* I want to register my score onto the high score list.
+* I want to see what other user's have scored in the quiz.
+
+### Returning User
+
+* I am wanting to improve my previous score.
+* I want to see if any other users have beaten my high score.
+* I am coming to see if there are any new questions/quizes.
+
 
 ## Existing Features
 
@@ -59,6 +80,12 @@ At the bottom of the quiz a live counter will show the user how many questions t
 
 ## Future plans
 
+Add more catagories for the quiz that the user can select between.
+
+Script the ability to chose random questions from an array so that each user gets different questions each time. However, this may cause issues for highscores as it becomes unfair and random. To combat this a difficulty selection could also be made. From Easy, Medium and Hard.
+
+Extending the quiz out to more questions and adding the ability to earn more score by getting a combo of correct questions. This will create a higher skill ceiling and allow users to compete more on the highscores.
+
 ## Testing
 
 ## Bugs
@@ -66,6 +93,9 @@ At the bottom of the quiz a live counter will show the user how many questions t
 During the early stages of development I had issues with getting my questions to display. They would initially come up as "undefined", so to figure this out I had to do some tinkering. I found that my issue was the code trying to display the question from the html element also called "question". I changed around the names and tried different orders until it would rewrite the HTML element with the "questions" array. 
 
 While devloping gitpod ran into issues displaying a preview of the site on a local network. To get around this I had to restart the workspace multiple times so that it would function correctly. I then also seeked out a new extension that would improve my preview experience. By downloading Live Server, any changes I made would refresh live to me on my other monitor. This made the flow of design and experimenting much easier.
+
+Towards the final stages while creating the high score list I encountered some blue screen errors on my PC. To combat this unexpected issue I began to save and commit my efforts more often. Fortunatly there were no more crashes during development and I was able to complete the rest of the script without any further crashes.
+
 ## Existing Bugs
 
 ## Deployment
@@ -103,15 +133,14 @@ Github
 
 ## Credits
 
-Understanding of how to put project into place thanks to Sitepoint:
-
-https://www.sitepoint.com/simple-javascript-quiz/#whatsnext
-
 Quiz questions were taken from:
 
 https://icebreakerideas.com/video-game-trivia/
 
 ## Acknowledgements
+Understanding of how to put project into place thanks to Sitepoint:
+
+https://www.sitepoint.com/simple-javascript-quiz/#whatsnext
 
 Refeshed knowledge of all symbols and how to apply to project found on this stackoverflow post:
 
@@ -141,9 +170,10 @@ Array mapping witth functions modified from:
 
 https://www.freecodecamp.org/news/javascript-map-how-to-use-the-js-map-function-array-method/
 
+A lot of the structure and understanding was thanks to the Love Maths project.
 
-A lot of the structure and understanding was thanks to the Love Maths project
-
-Lots of functions and syntax I learned on my University course at the University at York from 2016-2017
+Lots of functions and syntax I learned on my University course at the University at York from 2016-2017.
 
 Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.
+
+Thank you to my mentor for guidance and feedback that allowed me to make the best project I could.
