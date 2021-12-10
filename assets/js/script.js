@@ -123,7 +123,7 @@ let questions = [{
 playButton.addEventListener("click", startGame);
 
 /**
- * Hides welcome screen elements and unhides the quiz content including the heading, questions, and choices
+ * Hides welcome screen elements and unhides the quiz content including the heading, questions, and choices. Then calls the next question function.
  */
 function startGame() {
 
@@ -151,7 +151,7 @@ function startGame() {
 }
 
 /**
- * Displays the next question via the shuffled array of questions
+ * Displays the next question via the shuffled array of questions. If no questions are remaining then it will bring the user to the end screen.
  */
 function nextQuestion() {
     if (availableQuestions === 0 || questionCounter >= maxQuestions){
