@@ -33,7 +33,6 @@ User Stories as followed:
 * I want to see if any other users have beaten my high score.
 * I am coming to see if there are any new questions/quizes.
 
-
 ## Existing Features
 
 ### Welcome Screen
@@ -86,8 +85,39 @@ Script the ability to chose random questions from an array so that each user get
 
 Extending the quiz out to more questions and adding the ability to earn more score by getting a combo of correct questions. This will create a higher skill ceiling and allow users to compete more on the highscores.
 
+I would like to add the ability to see what the correct answer to a question was after a user guesses wrong. However this does cause the issue of making it too easy for the user to get 10 for the high scores immedietly after. Again this could be combated with random questions each time to balance this.
+
 ## Testing
 
+I performed extreme testing on every interactive element of the website. I had to make sure that every function was working intended and couldn't be broken when certain actions are performend. I will detail all the interactive elements bellow and how they work.
+
+### Home Page / Quiz
+
+#### Play Button
+
+The user goal of the play button is to display the quiz and begin playing the quiz. This all works correctly. When the play button is clicked it will run the StartGame function. This will hide the previous elements first seen on the home screen, such as the description and play button. Once the previous elements have been hidden, it will then unhide the quiz elements. This is done by using a hidden class which can be essentially toggled to show certain elements when the class is needed. This means technically that all the quiz elements have been loaded when the user goes to the home screen, they are just invisible. This means the user does not load to a seperate page for the quiz. This removes any form of loading screen in between loading and playing the quiz. Now that the elements have been drawn, the questions will be loaded from an array and the nextQuestion function will be called. 
+
+![Screenshot showing the play button](screenshots/play-screenshot.PNG "Screenshot of Play Button")
+
+#### Quiz
+
+When the quiz is loaded from the startGame function it will then beging the nextQuestion function immedietly. This way the user is shown a question as soon as the quiz is loaded. Firstly the script will make sure that there are available questions. It does this by seeing if the availableQuestions variable is equal to 0 or if the maximum questions have been reached. If this is the case then the user will be brought to the end screen. However since the quiz has just loaded, the quiz will display correctly. The question counter will begin at 1 to match the question as well. This will be compared to the maximum questions variable so the user can clearly mark their progress in the quiz. 
+
+The current question will first be loaded using a math random based on the available questions. This will draw a random question out of the available questions list. This list is edited after every question is answered as it is taken out of this availableQuestions array. The html for the question will then be written with the random question. Something similar happens for each of the question choices. Instead of being random however, it will take each choice from the questions array and display it with the number representing it. The number will be used to match with the correct answer.
+
+![Screenshot showing the loaded quiz](screenshots/quiz-functional-screenshot.PNG "Screenshot of loaded quiz")
+
+Now that all the elements have been drawn we need to find out if a selected choice is the correct one and feed this back to the user. An event listener will first register the clicked target as the selected choice. It will also listen out for the number that represents the selected choice. The code will then see if the number representing the correct answer matches the selected choice. It will then learn what class to apply if the answer is correct or incorrect. As well as applying a class the relevent score counter will have 1 added to it. This way a user gets live feedback to their choice in the counters.
+
+First when an answer is correct the user will recieve 1 point added onto their score. This score will be important later as it will be saved at the end of the game to register onto the high score. Then a class will be applied. The correct class will highlight the selected choice with a green background and white text, this makes it very apparent to the user that they got it right.
+
+![Screenshot showing a correct answer](screenshots/correct-screenshot.PNG "Screenshot of Correct Answer")
+
+The same thing happens when the answer is incorrect. However a red background is drawn to indicate that the answer is wrong.
+
+![Screenshot showing a incorrect answer](screenshots/incorrect-screenshot.PNG "Screenshot of Incorrect Answer")
+
+Now a short timeout will occur so that the user has time to process their response rather than the next question being loaded immediatly. At the end of this timeout the class will be removed so that the green/red background does not linger on a choice in the next question. Now that the score has been added and the user knows the result of their choice, we can call the next question and repeat this entire process.
 
 
 Index/Home Validation:
@@ -110,8 +140,18 @@ JS Validation:
 
 Using JSHint I was able to ensure that there was no warnings with any of my js files. I adjusted my files based on the feedback it gave me, which was primarly adding semi-colons.
 
-Chrome Dev Tools
+### External Links
+
+There are currently no external links on my website. However if I were to add social media links I would ensure that they opened in a new tab and that they all worked correctly.
+
+### Chrome Dev Tools
+
 During development, I relied heavily on dev tools to make live adjustments to the site. This allowed me to make small changes without affecting my code and needing to reverse engineer any mistakes. Using dev tools I was also able to view my site across several different resolutions and screen sizes. This helped me identify where my site may need to be changed to work correctly.
+
+### Lighthouse Dev Tools
+I was able to use Lighthouse from Chrome Dev Tools throughout development to ensure my Website was hitting my goals. I was able to ensure best practices were being used and that my website performance was high-scoring. From the screenshot below you can see that SEO and Accessibility was also greatly considered in site production.
+
+![Screenshot showing lighthouse score](screenshots/lighthouse-screenshot.PNG "Dev Tools Lighthouse Score")
 
 ## Bugs
 
@@ -124,6 +164,8 @@ Towards the final stages while creating the high score list I encountered some b
 At the end of development I had issues with the links working on the deployed version of the site. To fix this I had to go to my script files and remove the forward slashes before my page links. This would work on a local port but required them to be removed for the live version.
 
 ## Existing Bugs
+
+At the and of development I was able to identiy and make sure any bugs were fixed. If there are any future bugs that are discovered I would return to the project and make sure they are fixed.
 
 ## Deployment
 
@@ -158,11 +200,19 @@ Live Server (Gitpod extension)
 
 Github
 
+Github Pages
+
+Chrome Dev Tools
+
 ## Credits
 
 Quiz questions were taken from:
 
 https://icebreakerideas.com/video-game-trivia/
+
+Favicon taken from:
+
+https://icon-library.com/icon/game-controller-folder-icon-19.html
 
 ## Acknowledgements
 Understanding of how to put project into place thanks to Sitepoint:
