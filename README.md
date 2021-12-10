@@ -100,6 +100,14 @@ High Score Screen Validation:
 
 ![Screenshot showing high score validation test](screenshots/highscore-validaiton.PNG "High Score Validator")
 
+CSS Validation:
+
+![Screenshot showing CSS validation test](screenshots/css-validation.PNG "CSS Validator")
+
+JS Validation:
+
+Using JSHint I was able to ensure that there was no warnings with any of my js files. I adjusted my files based on the feedback it gave me, which was primarly adding semi-colons.
+
 ## Bugs
 
 During the early stages of development I had issues with getting my questions to display. They would initially come up as "undefined", so to figure this out I had to do some tinkering. I found that my issue was the code trying to display the question from the html element also called "question". I changed around the names and tried different orders until it would rewrite the HTML element with the "questions" array. 

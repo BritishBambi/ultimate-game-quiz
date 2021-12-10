@@ -9,8 +9,6 @@ let scoreNumber = document.getElementById("score");
 let incorrect = 0;
 let incorrectNumber = document.getElementById("incorrect");
 
-let shuffledQuestions, currentQuestionIndex;
-
 let acceptingAnswers = false;
 let availableQuestions = [];
 let questionCounter = 0;
@@ -119,7 +117,7 @@ let questions = [{
         option4: "Nintendo Wii",
         answer: 2
     },
-]
+];
 
 // When the play button is clicked it will initiate the game and hide elements to "load" the quiz
 playButton.addEventListener("click", startGame);
@@ -135,13 +133,13 @@ function startGame() {
     let quizHeading = document.getElementById("quiz-heading");
     let quizContent = document.getElementById("question-area");
     let scores = document.getElementById("score-area");
-    let highScore = document.getElementById("highscores")
+    let highScore = document.getElementById("highscores");
 
     console.log("Game Started");
     playButton.classList.add("hidden");
     Welcome.classList.add("hidden");
     description.classList.add("hidden");
-    highScore.classList.add("hidden")
+    highScore.classList.add("hidden");
     homeButton.classList.remove("hidden");
     quizHeading.classList.remove("hidden");
     quizContent.classList.remove("hidden");
@@ -157,7 +155,7 @@ function startGame() {
  */
 function nextQuestion() {
     if (availableQuestions === 0 || questionCounter >= maxQuestions){
-        localStorage.setItem("finalScore", score)
+        localStorage.setItem("finalScore", score);
         return window.location.assign("/end.html");
     }
     questionCounter++;
@@ -168,9 +166,9 @@ function nextQuestion() {
     question.innerText = currentQuestion.question;
 
     choices.forEach(option => {
-        const number = option.dataset['number'];
+        const number = option.dataset.number;
         option.innerText = currentQuestion['option' + number];
-    })
+    });
 
     availableQuestions.splice(currentQuestionIndex, 1);
 
@@ -182,7 +180,7 @@ choices.forEach(option => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -202,5 +200,5 @@ choices.forEach(option => {
         }, 1000);
 
         console.log(score);
-    })
-})
+    });
+});
