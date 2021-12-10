@@ -88,6 +88,18 @@ Extending the quiz out to more questions and adding the ability to earn more sco
 
 ## Testing
 
+Index/Home Validation:
+
+![Screenshot showing index validation test](screenshots/index-validation.PNG "Index Validator")
+
+End Screen Validation:
+
+![Screenshot showing end validation test](screenshots/end-validation.PNG "End Validator")
+
+High Score Screen Validation:
+
+![Screenshot showing high score validation test](screenshots/highscore-validaiton.PNG "High Score Validator")
+
 ## Bugs
 
 During the early stages of development I had issues with getting my questions to display. They would initially come up as "undefined", so to figure this out I had to do some tinkering. I found that my issue was the code trying to display the question from the html element also called "question". I changed around the names and tried different orders until it would rewrite the HTML element with the "questions" array. 

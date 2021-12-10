@@ -12,7 +12,7 @@ body{
     background-color: #131313;
 }
 
-h1 {
+h1,h2 {
     font-family: 'Heebo', sans-serif;
     color: #ddf840;
     font-size: 70px;
@@ -111,7 +111,7 @@ a{
 .answer{
     display: flex;
     font-size: 3rem;
-    margin-top: 10;
+    margin-top: 10px;
     width: 100%;
     border: 3px solid #1c4aa1;
     background-color: #b8bbc0;
@@ -124,13 +124,13 @@ a{
 .letter{
     color: white;
     background-color:#1E58C2;
-    padding: 10 30;
+    padding: 10px 30px;
 }
 
 .option-text{
     color: #2973fc;
     background-color: rgb(226, 226, 226);
-    padding: 15;
+    padding: 15px;
     width: 100%;
 }
 
@@ -186,7 +186,7 @@ a{
     width: 100vw;
     max-width: 80rem;
     height: 100vh;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .flex{
@@ -198,7 +198,7 @@ a{
 
 .generic-btn{
     margin-top: 20px;
-    padding: 10 15;
+    padding: 10px 15px;
     border-radius: 10px;
     background-color: #1E58C2;
     color: #ddf840;
@@ -228,7 +228,7 @@ form{
 input{
     margin-bottom: 1rem;
     width: 200px;
-    padding: 10 15;
+    padding: 10px 15px;
     font-size: 20px;
 }
 
@@ -271,7 +271,7 @@ input{
 
     .letter{
         font-size: 1.5rem;
-        padding: 5 10;
+        padding: 5px 10px;
     }
     .answer{
         font-size: 1.5rem;
@@ -299,7 +299,7 @@ input{
 
     .letter{
         font-size: 2rem;
-        padding: 5 30;
+        padding: 5px 30px;
     }
     .answer{
         font-size: 2rem;
@@ -310,7 +310,7 @@ input{
 }
 
 @media screen and (min-width: 1080px) {
-    h1{
+    h1, h2{
         font-size: 3rem;
     }
     #quiz-heading{
@@ -322,7 +322,7 @@ input{
 
     .letter{
         font-size: 3rem;
-        padding: 5 30;
+        padding: 5px 30px;
     }
     .answer{
         font-size: 3rem;
