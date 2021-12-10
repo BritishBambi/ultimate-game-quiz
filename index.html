@@ -1,64 +1,97 @@
 <!DOCTYPE html>
+<!-- HTML Start -->
 <html lang="en">
+<!-- Head Start -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to Favicon -->
     <link rel="icon" type="image/png" href="assets/imgs/icon.jpg">
+    <!-- Page Title -->
     <title>Ultimate Gaming Quiz</title>
 </head>
+<!-- Head End -->
+<!-- Body Start -->
 
 <body>
+    <!-- Header Start -->
     <header>
+        <!-- Welcome Start -->
         <div id="welcome-container">
             <h1 id="welcome">Welcome to the Ultimate Gaming Quiz</h1>
             <h2 id="description">Can you prove your gamer knowledge? Try and ace all 10 of these gaming related
                 questions to put your brain to the test!</h2>
+            <!-- Play Button -->
             <button id="play-btn">Play!</button>
+            <!-- Highscore Button -->
             <a href="highscores.html" class="generic-btn" id="highscores">Highscores</a>
         </div>
+        <!-- Welcome End -->
     </header>
+    <!-- Header End -->
+    <!-- Main Start -->
     <main>
+        <!-- Quiz Section Start -->
         <section id="quiz-wrapper">
+            <!-- Quiz Heading -->
             <h2 id="quiz-heading" class="hidden">
                 Ultimate Gaming Quiz
             </h2>
             <div>
+                <!-- Question Area Start -->
                 <div id="question-area" class="hidden">
+                    <!-- Question Counter -->
                     <div id="counter">
                         <p id="counter-text"></p>
                     </div>
+                    <!-- Question Text -->
                     <span id="question"></span>
+                    <!-- Choice 1 -->
                     <div class="answer">
                         <p class="letter">A</p>
                         <p class="option-text" data-number="1">Choice 1</p>
                     </div>
+                    <!-- Choice 2 -->
                     <div class="answer">
                         <p class="letter">B</p>
                         <p class="option-text" data-number="2">Choice 2</p>
                     </div>
+                    <!-- Choice 3 -->
                     <div class="answer">
                         <p class="letter">C</p>
                         <p class="option-text" data-number="3">Choice 3</p>
                     </div>
+                    <!-- Choice 4 -->
                     <div class="answer">
                         <p class="letter">D</p>
                         <p class="option-text" data-number="4">Choice 4</p>
                     </div>
                 </div>
+                <!-- Question Area End -->
             </div>
+            <!-- Score Area Start -->
             <div id="score-area" class="hidden">
+                <!-- Correct Score Counter -->
                 <p class="scores" id="correct-text">Correct Answers: <span id="score">0</span></p>
+                <!-- Incorrect Score Counter -->
                 <p class="scores" id="incorrect-text">Incorrect Answers: <span id="incorrect">0</span></p>
             </div>
+            <!-- Score Area End -->
+            <!-- Home Button -->
             <form action="index.html">
                 <button id="home-btn" class="hidden">Go Home!</button>
             </form>
         </section>
+        <!-- Quiz Section End -->
     </main>
+    <!-- Javascript Loader -->
     <script src="/assets/js/script.js"></script>
 </body>
+<!-- Body End -->
 
 </html>
+<!-- HTML End -->

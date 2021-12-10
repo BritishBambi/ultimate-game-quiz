@@ -1,29 +1,47 @@
 <!DOCTYPE html>
+<!-- HTML Start -->
 <html lang="en">
+<!-- Head Start -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to Favicon -->
     <link rel="icon" type="image/png" href="assets/imgs/icon.jpg">
+    <!-- Page Title -->
     <title>Ultimate Gaming Quiz</title>
 </head>
+<!-- Head End -->
+<!-- Body Start -->
 
 <body>
+    <!-- Main Start -->
     <main>
+        <!-- Score Start -->
         <div class="score-container">
             <div id="end" class="flex">
+                <!-- Final Score -->
                 <h1 id="final-score">0</h1>
+                <!-- Score Submission Form -->
                 <form>
+                    <!-- Username Entry Field -->
                     <input type="text" name="username" id="username" placeholder="username">
+                    <!-- Score save button -->
                     <button type="submit" id="save-btn" class="generic-btn" onclick="saveHighScore(event)" disabled>Save</button>
                 </form>
+                <!-- Replay Button -->
                 <a href="index.html" class="generic-btn">Play Again</a>
             </div>
         </div>
+        <!-- Score End -->
     </main>
+    <!-- Main End -->
+    <!-- Javascript Loader -->
     <script src="/assets/js/end.js"></script>
 </body>
-
+<!-- Body End -->
 </html>
+<!-- HTML End -->
