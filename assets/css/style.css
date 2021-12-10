@@ -242,6 +242,18 @@ input{
     justify-content: center;
 }
 
+#highScore-header{
+    font-size: 3.5rem;
+}
+
+.high-score{
+    color: #ddf840;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+
 @media screen and (min-width: 320px) {
     h1,h2{
         font-size: 20px;

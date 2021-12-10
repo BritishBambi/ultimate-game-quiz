@@ -109,6 +109,13 @@ Used arrow functions after reading up here:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
+Array mapping witth functions modified from:
+
+https://www.freecodecamp.org/news/javascript-map-how-to-use-the-js-map-function-array-method/
+
+
 A lot of the structure and understanding was thanks to the Love Maths project
+
+Lots of functions and syntax I learned on my University course at the University at York from 2016-2017
 
 Thanks to the Code Institute javascript module for teaching me the functionality and use of javascript.
