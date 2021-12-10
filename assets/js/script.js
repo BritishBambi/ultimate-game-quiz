@@ -156,7 +156,7 @@ function startGame() {
 function nextQuestion() {
     if (availableQuestions === 0 || questionCounter >= maxQuestions){
         localStorage.setItem("finalScore", score);
-        return window.location.assign("end.html");
+        return window.location.assign("ultimate-game-quiz/end.html");
     }
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${maxQuestions}`;
