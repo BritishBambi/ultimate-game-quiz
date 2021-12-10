@@ -42,9 +42,20 @@ While devloping gitpod ran into issues displaying a preview of the site on a loc
 
 ## Deployment
 
+### Site Creation
+
 To begin creating my website I used the Code Institute template by navigating [here](https://github.com/Code-Institute-Org/gitpod-full-template) and clicking "Use this Template".
 
 Once this was done I was able to simply create a new repository from the template and add it to my profile. I named my repository and clicked the create repository from the template button.
+
+### Site Deployment
+The Steps to Deploy my site were as followed:
+
+1. Log into GitHub and find my site repository
+2. Locate the repository settings button located above the repository content and click on it.
+3. Scroll down to the GitHub Pages section.
+4. Change the source drop down menu from "none" to "main".
+5. Click Save and await site deployment using the provided link to access site once it was live.
 
 ## Technologies Used
 
