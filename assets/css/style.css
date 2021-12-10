@@ -236,6 +236,12 @@ input{
     font-size: 5rem;
 }
 
+.highScore-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 320px) {
     h1,h2{
         font-size: 20px;
