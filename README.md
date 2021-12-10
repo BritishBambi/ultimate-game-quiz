@@ -230,6 +230,12 @@ Chrome Dev Tools
 
 ## Credits
 
+Quiz understanding and initial code was borrowed from:
+
+https://www.youtube.com/watch?v=riDzcEQbX6k
+
+However applied previous and extended knowledge to make code my own. I primarily used the hidden class that features from the video as well as the idea to add a correct and incorrect class to answers.
+
 Quiz questions were taken from:
 
 https://icebreakerideas.com/video-game-trivia/
