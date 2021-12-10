@@ -1,6 +1,8 @@
 # Ultimate Gaming Quiz
 
-My site is created with the intention of delivering an entertaining source of media to users. I have done this by creating an interactive quiz about video games that will challenge users. I designed the site with an old school arcade scheme in mind, this plays on the nostalgia that users would have around video games. Any user that goes on the site will be able to easily interact with all the sites functions. IF CAN BE DONE Users will also be able to store a personal highscore to encourage sharing with friends and attempting to beat each other. This will in turn create a social aspect around the quiz.
+My site is created with the intention of delivering an entertaining source of media to users. I have done this by creating an interactive quiz about video games that will challenge users. I designed the site with an old school arcade scheme in mind, this plays on the nostalgia that users would have around video games. Any user that goes on the site will be able to easily interact with all the sites functions. Users will also be able to store a personal highscore to encourage sharing with friends and attempting to beat each other. This will in turn create a social aspect around the quiz.
+
+![Screenshot showing website on different devices](screenshots/deployed-screenshot.PNG "Screenshot of Deployed site")
 
 [Link to Deployed site](https://britishbambi.github.io/ultimate-game-quiz/index.html)
 
@@ -89,6 +91,10 @@ I would like to add the ability to see what the correct answer to a question was
 
 ## Testing
 
+I have ensured that the site works across a large number of devices. While also using the inbuilt responsive devices on dev tools I used an Ultrawide monitor, a 1440p monitor, a OnePlus 8, and an iPhone 8 mobile device. I could find no issues on these devices as compared to the usual dev tools version.
+
+All Navigation links lead to the correct pages. Any link/button hovered over also has some visual feedback to the user to indicate that it is a link.
+
 I performed extreme testing on every interactive element of the website. I had to make sure that every function was working intended and couldn't be broken when certain actions are performend. I will detail all the interactive elements bellow and how they work.
 
 ### Home Page / Quiz
@@ -99,7 +105,7 @@ The user goal of the play button is to display the quiz and begin playing the qu
 
 ![Screenshot showing the play button](screenshots/play-screenshot.PNG "Screenshot of Play Button")
 
-#### Quiz
+### Quiz
 
 When the quiz is loaded from the startGame function it will then beging the nextQuestion function immedietly. This way the user is shown a question as soon as the quiz is loaded. Firstly the script will make sure that there are available questions. It does this by seeing if the availableQuestions variable is equal to 0 or if the maximum questions have been reached. If this is the case then the user will be brought to the end screen. However since the quiz has just loaded, the quiz will display correctly. The question counter will begin at 1 to match the question as well. This will be compared to the maximum questions variable so the user can clearly mark their progress in the quiz. 
 
@@ -119,6 +125,22 @@ The same thing happens when the answer is incorrect. However a red background is
 
 Now a short timeout will occur so that the user has time to process their response rather than the next question being loaded immediatly. At the end of this timeout the class will be removed so that the green/red background does not linger on a choice in the next question. Now that the score has been added and the user knows the result of their choice, we can call the next question and repeat this entire process.
 
+### End Screen / Score Saving
+
+After all the available questions have been spliced and cycled through the previous function will save the final score to the local storage. Now the user will be brought to an end screen where they can save this score with a username. First of all we have disabled the save button until an input has been entered into the username field. Now when the save button is pressed it will save the score into the highscores array with the name and score. If there was no previous high scores then it will create a new blank array where the highscores will be saved to. These highscores will be sorted in order of highest score. 
+
+There will only be a max of 5 highscores in the final array. So right at the end it will check to see if it qualifies as a new high score and spilces out the previous bottom score. If the score does not qualify then the score will not be shown on the final high score list. By using JSON.Parse we also convert these values into a string so that we can display them later. Now that the score has been saved to the array we bring the user back to the home screen. However if the user does not wish to save their score we can press the play again button which will skip all the functions and bring the user to the home straight away.
+
+![Screenshot showing the score save screen](screenshots/end-screen.PNG "Screenshot of Score saving")
+
+### High Scores Screen
+
+The high score screen is very simple and functions as intended. When the page is loaded the highscores array we created early will be written to the page HTML. If there is no existing array then an empty one will show instead essentially showing nothing to the user. Now the loaded highscores will be mapped out into an unordered list. The name will be shown with the score next to it. This all displays as a string which is the only way we would be able to see it as intended.
+
+![Screenshot showing the high score screen](screenshots/highscore-screenshot.PNG "screenshot of Highscore screen")
+
+
+### Code Validation
 
 Index/Home Validation:
 
