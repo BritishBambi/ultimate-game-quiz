@@ -62,6 +62,7 @@ a{
 }
 
 #description{
+    margin-top: 50px;
     color: #ddf840;
     font-size: 40px;
     width: 50%;
@@ -260,7 +261,7 @@ input{
     }
 
     #description{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     #quiz-heading{
         font-size: 1.5rem;
