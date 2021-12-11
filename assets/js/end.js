@@ -1,3 +1,5 @@
+//Code to functionally get working high score array from: https://www.youtube.com/watch?v=o3MF_JmQxYg&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=9
+
 const username = document.getElementById("username");
 const saveScore = document.getElementById("save-btn");
 const finalScore = localStorage.getItem("finalScore");

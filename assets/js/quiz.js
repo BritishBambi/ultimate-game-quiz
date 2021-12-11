@@ -1,4 +1,5 @@
 // The code for this quiz was inspired by https://www.youtube.com/watch?v=riDzcEQbX6k&t however I personalised it and only took the functionality of it into my own quiiz.
+// A lot of the variables and functions was also taken from https://www.youtube.com/watch?v=zZdQGs62cR8 in order to get questions and answers displayed
 
 let playButton = document.getElementById("play-btn");
 let question = document.getElementById("question");
@@ -187,9 +188,9 @@ function nextQuestion() {
 choices.forEach(option => {
     option.addEventListener('click', e => {
         if (!acceptingAnswers) return;
+        acceptingAnswers = false;
 
         // Saves the selected choice as the target and also saved the number represnting the choice in the array
-        acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset.number;
 

@@ -39,6 +39,10 @@ User Stories as followed:
 
 ## Existing Features
 
+### Favicon
+
+At the top of the screen where the site tab is located, a favicon can be seen. This adds a subtle amount of design that uniforms the entire theme of the site
+
 ### Welcome Screen
 
 When the site is initially loaded the user is greeted with a simple heading and site description. This way the user isn't overblown with the quiz when they first enter the site. It also features a play button, which gives the user total control for when the quiz is loaded. There is also a high score button, when which pressed will take the user to the score screen, negating the need to complete the quiz first. The play and highscore buttons are fully interactive as well and highlights with a mouse pointer so the user can easily make out that it is a button. By using the blue background they also stand out immedietly when the page is loaded. 
@@ -90,6 +94,8 @@ Script the ability to chose random questions from an array so that each user get
 Extending the quiz out to more questions and adding the ability to earn more score by getting a combo of correct questions. This will create a higher skill ceiling and allow users to compete more on the highscores.
 
 I would like to add the ability to see what the correct answer to a question was after a user guesses wrong. However this does cause the issue of making it too easy for the user to get 10 for the high scores immedietly after. Again this could be combated with random questions each time to balance this.
+
+ I would also like the ability for highscores to be scaled up and compared to on an online database. Making a global scale for compeition that users would be allowed to compete against. 
 
 ## Testing
 
@@ -235,6 +241,16 @@ Quiz understanding and initial code was borrowed from:
 https://www.youtube.com/watch?v=riDzcEQbX6k
 
 However applied previous and extended knowledge to make code my own. I primarily used the hidden class that features from the video as well as the idea to add a correct and incorrect class to answers.
+
+Javascript understanding to make questions and answers function correctly was borrowed from:
+
+https://www.youtube.com/watch?v=zZdQGs62cR8
+
+Tried some functions initially but found difficulty so used this video as a guide for the variables and the functions I'd be applying to make everything appear the way I intended.
+
+Displaying the highscores from local storage was borrowed from:
+
+https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68
 
 Quiz questions were taken from:
 
